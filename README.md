@@ -1,5 +1,5 @@
 # Google Sheets to WhatsApp Server
-#(without WhatsApp API)
+# (without WhatsApp API)
 A Python-based demo for automating WhatsApp message sending using data from Google Sheets. Includes scripts for browser automation with Chrome WebDriver.
 ## install:
 ### 1) first you need to install the following libraries:
