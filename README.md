@@ -21,3 +21,12 @@ b) Enable the Google Sheets API: Within the project, go to the "APIs & Services"
 c) Create a Service Account: In the "APIs & Services" section, create a service account. This account will act on your behalf when accessing the Google Sheets data. Generate a key in JSON format during this step and download it.
 
 d) Share Google Sheets with the Service Account: Open your Google Sheet, click the Share button, and add the service account email (found in the JSON file) with Editor access.
+
+## Run:
+In order to run project you need to run these two files sepratly:
+```
+* chromedriver.exe
+```
+```
+* whatsapp_automation.py
+```
