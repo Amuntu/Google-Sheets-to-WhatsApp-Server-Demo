@@ -24,9 +24,5 @@ d) Share Google Sheets with the Service Account: Open your Google Sheet, click t
 
 ## Run:
 In order to run project you need to run these two files sepratly:
-```
-* chromedriver.exe
-```
-```
-* whatsapp_automation.py
-```
+* `chromedriver.exe`
+* `whatsapp_automation.py`
