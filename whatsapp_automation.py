@@ -9,7 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 # Google Sheets setup
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-creds = ServiceAccountCredentials.from_json_keyfile_name('C:/Users/ASUS/Desktop/Server/sheetsCredentials.json', scope)
+creds = ServiceAccountCredentials.from_json_keyfile_name('/path/to/your/sheetCredentials.json', scope)
 client = gspread.authorize(creds)
 
 # Open the Google Sheet (replace with your sheet name and cell reference)
@@ -28,8 +28,9 @@ print("OK")
 try:
     while True:
         current_row_count = sheet.row_count
+        recipient = input() #The number you're sending the message to, it should be like this ["your contry Code + the number], Ex: +963-930-756-990 it should be "963930756990"
+                            # or you can enter the contact name if you know it (Not Recomennded).
         print("New message")
-        recipient = "963932722234"
         message = sheet.cell(current_row_count, 2).value  # Replace with column number
 
         # Search for the recipient
